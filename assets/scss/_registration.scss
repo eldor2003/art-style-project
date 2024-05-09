@@ -1,0 +1,122 @@
+// registration
+.registration {
+	padding: 90px 0 0 0;
+	.registr_block {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 85px;
+		z-index: 2;
+	}
+	.register_title {
+		color: #f5a74b;
+		font-size: 156px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		position: relative;
+		z-index: 22;
+	}
+	.register_desc {
+		color: #fff;
+		font-size: 36px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: 0.72px;
+		position: relative;
+		z-index: 23;
+	}
+	.register_girl {
+		text-align: center;
+		img {
+			position: relative;
+			z-index: 3;
+		}
+	}
+	.register_left {
+		max-width: 950px;
+		position: relative;
+	}
+	.register_right {
+		flex: 0 0 auto;
+		width: 31.5%;
+	}
+	.circle_img img {
+		position: absolute;
+		bottom: 100px;
+		z-index: 0;
+		left: 0;
+	}
+	.triangle_img {
+		position: absolute;
+		top: 120px;
+		right: 120px;
+		z-index: 0;
+	}
+	.register_form_title {
+		color: #f3f2f2;
+		font-family: "Tinos";
+		font-size: 70px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		margin-bottom: 55px;
+	}
+	.register_form {
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+		input {
+			height: 80px;
+			padding: 0 10px;
+			border: none;
+			outline: none;
+			border-bottom: 1px solid #fff;
+			color: #fff;
+			font-family: "Tinos";
+			font-size: 36px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			background-color: transparent;
+			&::placeholder {
+				font-family: "Tinos";
+				font-size: 36px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				color: #fff;
+			}
+		}
+		button {
+			margin-top: 23px;
+			margin-bottom: 55px;
+			color: #fff;
+			font-family: "Tinos";
+			font-size: 40px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			padding: 16px 0;
+			text-align: center;
+			display: block;
+			border-radius: 5px;
+			background: #d3a064;
+			box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+		}
+	}
+	.have_account {
+		text-align: center;
+		a {
+			color: #f4c996;
+			font-family: "Tinos";
+			font-size: 32px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			text-decoration-line: none;
+			border-bottom: 1px solid #f4c996;
+		}
+	}
+}

@@ -1,0 +1,218 @@
+.container {
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 0;
+}
+@media (max-width: 1660px) {
+	.container {
+		max-width: 1320px;
+	}
+	.registration .triangle_img {
+		right: 0;
+	}
+}
+@media (max-width: 1400px) {
+	.container {
+		max-width: 1140px;
+	}
+	.registration .registr_block {
+		flex-direction: column;
+	}
+	.registration .register_left {
+		width: 100%;
+	}
+	.registration .register_right {
+		width: 70%;
+	}
+}
+@media (max-width: 1200px) {
+	.container {
+		max-width: 960px;
+	}
+}
+@media (max-width: 992px) {
+	.container {
+		max-width: 720px;
+	}
+	.header .header_menus li a {
+		font-size: 20px;
+	}
+	.history .history_title {
+		font-size: 50px;
+	}
+	.history .clear_history {
+		padding: 0 12px;
+		font-size: 30px;
+		padding: 9px 0;
+	}
+	.header .header_menus {
+		gap: 30px;
+	}
+	.art_images .art_title {
+		font-size: 90px;
+	}
+	.art_images .art_desc {
+		font-size: 30px;
+	}
+	.art_images .images_block {
+		gap: 10px 25px;
+		padding: 20px 40px 20px 40px;
+		margin-bottom: 30px;
+	}
+	.registration .register_girl img {
+		width: 280px;
+	}
+	.art_images .image_item {
+		width: 30%;
+	}
+	.art_images {
+		padding-bottom: 30px;
+	}
+	.art_images .know_style,
+	.art_images .add_image {
+		padding: 10px 0;
+		text-align: center;
+		flex: 1;
+		font-size: 28px;
+	}
+	.registration .triangle_img {
+		top: 160px;
+		img {
+			max-width: 280px;
+		}
+	}
+	.registration .registr_block {
+		gap: 50px;
+	}
+	.registration {
+		padding: 50px 0;
+	}
+}
+@media (max-width: 768px) {
+	.container {
+		max-width: 540px;
+	}
+	.art_images .images_block {
+		gap: 10px 20px;
+	}
+	.history .history_top {
+		padding: 20px 0 20px 0;
+	}
+	.history .history_desc {
+		font-size: 27px;
+		margin-bottom: 35px;
+	}
+	.history .images_block#history_images .image_item {
+		width: 46%;
+	}
+	.history .images_block#history_images {
+		gap: 30px 0px;
+		justify-content: space-between;
+	}
+}
+@media (max-width: 576px) {
+	.container {
+		max-width: 100%;
+		padding: 0 20px;
+	}
+	.history .images_block#history_images .img_name {
+		font-size: 16px;
+	}
+	.header .header_block {
+		padding: 10px 0;
+		flex-wrap: wrap;
+	}
+	.history .history_top {
+		flex-direction: column;
+		gap: 15px;
+	}
+	.history .clear_history {
+		font-size: 22px;
+	}
+	.history .history_desc {
+		font-size: 22px;
+		margin-bottom: 20px;
+	}
+	.history .images_block#history_images {
+		margin-bottom: 0;
+	}
+	.history .history_title {
+		font-size: 35px;
+	}
+	.header_logo a img {
+		max-width: 60px;
+	}
+	.art_images .images_block {
+		padding: 10px 20px;
+	}
+	.art_images .image_item {
+		width: 46%;
+	}
+	.art_images .img_name {
+		font-size: 18px;
+	}
+	.art_images .image_buttons {
+		flex-direction: column;
+		gap: 15px;
+		a {
+			width: 100%;
+			font-size: 20px;
+		}
+	}
+	.art_images .art_desc {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	.art_images .art_title {
+		font-size: 60px;
+	}
+	.header .header_menus {
+		gap: 15px;
+	}
+	.header .header_menus li a {
+		font-size: 16px;
+	}
+	.registration .register_title {
+		font-size: 80px;
+	}
+	.registration .register_desc {
+		font-size: 24px;
+	}
+	.registration .register_girl img {
+		width: 220px;
+	}
+	.registration .triangle_img {
+		top: 130px;
+	}
+	.registration .registr_block {
+		gap: 30px;
+	}
+	.registration .register_right {
+		width: 100%;
+	}
+	.registration .register_form_title {
+		font-size: 50px;
+		margin-bottom: 0px;
+	}
+	.registration .register_form input {
+		height: 50px;
+		&::placeholder {
+			font-size: 22px;
+		}
+	}
+	.registration .register_form button {
+		margin-top: 19px;
+		margin-bottom: 25px;
+		font-size: 29px;
+		padding: 9px 0;
+	}
+	.registration .register_form {
+		gap: 15px;
+	}
+	.registration .have_account a {
+		font-size: 25px;
+	}
+	.registration .triangle_img img {
+		display: none;
+	}
+}

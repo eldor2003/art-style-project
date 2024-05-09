@@ -1,0 +1,26 @@
+html {
+	&::-webkit-scrollbar {
+		background-color: #000;
+		width: 5px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: #ddcac854;
+		width: 3px;
+	}
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Viaoda Libre", serif;
+	// font-family: "Tinos", serif;
+	font-weight: 400;
+	background: #000;
+	color: #fff;
+}
+.wrapper {
+	overflow: hidden;
+}
