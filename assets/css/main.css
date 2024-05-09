@@ -92,7 +92,7 @@ body {
 .img {
   position: relative;
 }
-.img img:first-child {
+.img > img:first-child {
   width: 100%;
 }
 .img .close {
@@ -101,6 +101,39 @@ body {
   right: 9px;
   z-index: 4;
   cursor: pointer;
+}
+.img .loader_icon {
+  display: none;
+}
+.img.loading {
+  position: relative;
+}
+.img.loading::after {
+  content: "";
+  width: 100%;
+  height: 96%;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(42, 42, 42, 0.62);
+}
+.img.loading .loader_icon {
+  display: block;
+  position: absolute;
+  bottom: 28px;
+  left: 0px;
+  right: 0;
+  z-index: 4;
+  text-align: center;
+}
+.img.loading .loader_icon p {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.4px;
 }
 
 .image_buttons {
@@ -222,6 +255,7 @@ body {
   font-weight: 400;
   line-height: normal;
   margin-bottom: 55px;
+  text-align: center;
 }
 .registration .register_form {
   display: flex;
@@ -329,6 +363,12 @@ body {
   padding: 0;
   gap: 30px 45px;
 }
+.history .images_block#history_images .img img:first-child {
+  height: 180px;
+}
+.history .images_block#history_images .img img:last-child {
+  width: 20px;
+}
 .history .images_block#history_images .image_item {
   width: 20%;
 }
@@ -365,15 +405,27 @@ body {
   .registration .register_right {
     width: 70%;
   }
+  .images_block {
+    gap: 17px 30px;
+  }
+  .image_item {
+    width: 22%;
+  }
 }
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
   }
+  .image_item {
+    width: 29%;
+  }
 }
 @media (max-width: 992px) {
   .container {
     max-width: 720px;
+  }
+  .history .images_block#history_images .image_item {
+    width: 29%;
   }
   .header .header_menus li a {
     font-size: 20px;
@@ -433,6 +485,12 @@ body {
   .container {
     max-width: 540px;
   }
+  .img.loading .loader_icon p {
+    font-size: 16px;
+  }
+  .img.loading .loader_icon {
+    bottom: 15px;
+  }
   .art_images .images_block {
     gap: 10px 20px;
   }
@@ -456,8 +514,17 @@ body {
     max-width: 100%;
     padding: 0 20px;
   }
+  .history {
+    margin-bottom: 20px;
+  }
+  .history .images_block#history_images .img img:last-child {
+    width: 17px;
+  }
   .history .images_block#history_images .img_name {
     font-size: 16px;
+  }
+  .history .images_block#history_images .img img:first-child {
+    height: 130px;
   }
   .header .header_block {
     padding: 10px 0;
